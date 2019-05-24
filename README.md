@@ -17,9 +17,11 @@ A Docker container that is designed to let you debug PHP Scripts using Visual St
 6. Be sure to install PHP Debug in Visual Studio
 7. Click on the debug section on the side tab. Click on the configuration drop down and select "add configuration", then select PHP.
 8. Replace the contents of the newly created confgiuration with the contents of launch.json, included in the repo.
+    * If you changed the default port from 9000 to another value, you will need to replace that port number in this configuration file.
 9. Once the image is finished being made, the server is configured and VS Code is configured, start the PHP server with the following command:
     * `docker-compose up`
     * You can navigate to the running webserver at [http://localhost:8000](http://localhost:8000)
+    * phpinfo() is loaded by default at this address. You can confirm that Xdebug is listed in the info page
 
 ## Instructions for Use
 
